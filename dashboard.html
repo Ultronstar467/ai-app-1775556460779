@@ -1,0 +1,127 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI SaaS Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <i class="fas fa-brain"></i> AI SaaS
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active"><a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-cogs"></i> AI Models</a></li>
+                    <li><a href="#"><i class="fas fa-code"></i> API Usage</a></li>
+                    <li><a href="#"><i class="fas fa-users"></i> Users</a></li>
+                    <li><a href="pricing.html"><i class="fas fa-dollar-sign"></i> Billing</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <h2>Dashboard Overview</h2>
+                <div class="user-profile">
+                    <span>John Doe</span>
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </header>
+
+            <section class="dashboard-widgets">
+                <div class="widget card">
+                    <div class="widget-icon primary"><i class="fas fa-cubes"></i></div>
+                    <div class="widget-info">
+                        <h3>Active Models</h3>
+                        <p class="metric">12</p>
+                    </div>
+                </div>
+                <div class="widget card">
+                    <div class="widget-icon success"><i class="fas fa-code"></i></div>
+                    <div class="widget-info">
+                        <h3>API Calls (24h)</h3>
+                        <p class="metric">25,432</p>
+                    </div>
+                </div>
+                <div class="widget card">
+                    <div class="widget-icon warning"><i class="fas fa-users"></i></div>
+                    <div class="widget-info">
+                        <h3>Total Users</h3>
+                        <p class="metric">1,890</p>
+                    </div>
+                </div>
+                <div class="widget card">
+                    <div class="widget-icon danger"><i class="fas fa-exclamation-triangle"></i></div>
+                    <div class="widget-info">
+                        <h3>Alerts</h3>
+                        <p class="metric">3</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dashboard-charts">
+                <div class="chart-card card">
+                    <h3>API Usage Over Time</h3>
+                    <canvas id="apiUsageChart"></canvas>
+                </div>
+                <div class="chart-card card">
+                    <h3>Model Performance</h3>
+                    <canvas id="modelPerformanceChart"></canvas>
+                </div>
+            </section>
+
+            <section class="recent-activity card">
+                <h3>Recent Activities</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Activity</th>
+                            <th>User</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2 min ago</td>
+                            <td>Model 'Sentiment Analyzer' deployed</td>
+                            <td>Jane Smith</td>
+                            <td><span class="status-badge success">Success</span></td>
+                        </tr>
+                        <tr>
+                            <td>15 min ago</td>
+                            <td>API key generated for 'Report Service'</td>
+                            <td>John Doe</td>
+                            <td><span class="status-badge info">Info</span></td>
+                        </tr>
+                        <tr>
+                            <td>1 hour ago</td>
+                            <td>High latency detected on 'Image Processor'</td>
+                            <td>System</td>
+                            <td><span class="status-badge warning">Warning</span></td>
+                        </tr>
+                        <tr>
+                            <td>3 hours ago</td>
+                            <td>Billing plan updated to Pro</td>
+                            <td>Jane Smith</td>
+                            <td><span class="status-badge success">Success</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
